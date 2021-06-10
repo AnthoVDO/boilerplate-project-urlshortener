@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 require('dotenv').config();
 
-const PostModel = mongoose.model(
+const PostsModel = mongoose.model(
     "urlShortenerFcc",
     {
         initialUrl:{
@@ -16,4 +16,4 @@ const PostModel = mongoose.model(
     "posts"
 )
 
-module.exports = {PostModel};
+module.exports = {PostsModel};
