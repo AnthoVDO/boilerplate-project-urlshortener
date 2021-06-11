@@ -9,7 +9,6 @@ router.get("/shorturl/:data", (req, res)=>{
         if(url.length === 0) return res.sendFile(process.cwd() + '/views/wrongUrl.html');
         if(err) return console.log(err)
         else {
-            //console.log(url[0].initialUrl)
             return res.redirect(url[0].initialUrl);
         }
     })
